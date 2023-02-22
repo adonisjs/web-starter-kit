@@ -1,0 +1,36 @@
+{
+  "typescript": true,
+  "commands": [
+    "@adonisjs/core/commands"
+  ],
+  "providers": [
+    "@adonisjs/core/providers/app_provider",
+    "@adonisjs/core/providers/http_provider",
+    "@adonisjs/core/providers/hash_provider",
+    "./providers/emitter_provider.js",
+    "./providers/app_provider.js"
+  ],
+  "preloads": [
+    "#start/routes",
+    "#start/kernel"
+  ],
+  "tests": {
+    "suites": [
+      {
+        "files": [
+          "tests/unit/**/*.spec(.ts|.js)"
+        ],
+        "name": "unit",
+        "timeout": 2000
+      },
+      {
+        "files": [
+          "tests/browser/**/*.spec(.ts|.js)"
+        ],
+        "name": "browser",
+        "timeout": 30000
+      }
+    ],
+    "forceExit": false
+  }
+}
