@@ -2,7 +2,6 @@ import { assert } from '@japa/assert'
 import type { Config } from '@japa/runner'
 import app from '@adonisjs/core/services/app'
 import { specReporter } from '@japa/spec-reporter'
-import { browserClient } from '@japa/browser-client'
 import { pluginAdonisJS } from '@japa/plugin-adonisjs'
 import testUtils from '@adonisjs/core/services/test_utils'
 
@@ -14,7 +13,10 @@ import testUtils from '@adonisjs/core/services/test_utils'
  * Configure Japa plugins in the plugins array.
  * Learn more - https://japa.dev/docs/runner-config#plugins-optional
  */
-export const plugins: Config['plugins'] = [assert(), browserClient({}), pluginAdonisJS(app)]
+export const plugins: Config['plugins'] = [
+  assert(),
+  pluginAdonisJS(app)
+]
 
 /**
  * Configure Japa reporters to report the tests summary

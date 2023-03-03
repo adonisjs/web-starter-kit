@@ -13,7 +13,4 @@
 
 import router from '@adonisjs/core/services/router'
 
-router.get('/', async ({ request }) => {
-  console.log(request.cookie('username'))
-  return '<p> It works! </p>'
-})
+router.get('/', async () => 'hello world')

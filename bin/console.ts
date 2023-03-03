@@ -3,8 +3,8 @@
 | Ace entry point
 |--------------------------------------------------------------------------
 |
-| The "ace.ts" file is the entrypoint for booting the AdonisJS commandline
-| framework and executing commands.
+| The "console.ts" file is the entrypoint for booting the AdonisJS
+| command-line framework and executing commands.
 |
 | Commands do not boot the application, unless the currently running command
 | has "options.startApp" flag set to true.
