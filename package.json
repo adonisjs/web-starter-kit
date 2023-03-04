@@ -35,6 +35,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@adonisjs/core": "^6.1.4-0"
+    "@adonisjs/core": "^6.1.5-0"
   }
 }
