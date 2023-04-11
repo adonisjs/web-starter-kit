@@ -25,9 +25,9 @@
       },
       {
         "files": [
-          "tests/browser/**/*.spec(.ts|.js)"
+          "tests/functional/**/*.spec(.ts|.js)"
         ],
-        "name": "browser",
+        "name": "functional",
         "timeout": 30000
       }
     ],
