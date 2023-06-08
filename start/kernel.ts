@@ -24,6 +24,7 @@ server.errorHandler(() => import('#exceptions/handler'))
  */
 server.use([
   () => import('#middleware/container_bindings_middleware'),
+  () => import('@adonisjs/static/static_middleware'),
 ])
 
 /**
