@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node bin/test.js",
+    "build": "node ace build",
     "dev": "node ace serve --watch",
     "test": "node ace test"
   },
@@ -34,11 +35,13 @@
     "playwright": "^1.32.3",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
   },
   "dependencies": {
     "@adonisjs/core": "^6.1.5-4",
     "@adonisjs/static": "^1.0.0",
-    "@adonisjs/view": "^7.0.0-2"
+    "@adonisjs/view": "^7.0.0-2",
+    "@adonisjs/vite": "0.0.1-2"
   }
 }

@@ -9,8 +9,7 @@ build
 .env.development.local
 
 # Frontend assets compiled code
-public/hot
-public/build
+public/assets
 
 # Build tools specific
 npm-debug.log
