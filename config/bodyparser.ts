@@ -5,7 +5,7 @@ export default defineConfig({
    * The bodyparser middleware will parse the request body
    * for the following HTTP methods.
    */
-  whitelistedMethods: ['POST', 'PUT', 'PATCH', 'DELETE'],
+  allowedMethods: ['POST', 'PUT', 'PATCH', 'DELETE'],
 
   /**
    * Config for the "application/x-www-form-urlencoded"
