@@ -23,7 +23,19 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "skipLibCheck": true,
-    "types": ["@types/node"]
+    "types": ["@types/node"],
+    "paths": {
+      "#controllers/*": ["./app/controllers/*"],
+      "#exceptions/*": ["./app/exceptions/*"],
+      "#models/*": ["./app/models/*"],
+      "#services/*": ["./app/services/*"],
+      "#listeners/*": ["./app/listeners/*"],
+      "#events/*": ["./app/events/*"],
+      "#middleware/*": ["./app/middleware/*"],
+      "#validators/*": ["./app/validators/*"],
+      "#start/*": ["./start/*"],
+      "#config/*": ["./config/*"],
+    }
   },
   "include": ["./**/*"],
   "exclude": ["./node_modules", "./build"],
