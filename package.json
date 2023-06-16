@@ -8,7 +8,9 @@
     "start": "node bin/test.js",
     "build": "node ace build",
     "dev": "node ace serve --watch",
-    "test": "node ace test"
+    "test": "node ace test",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
