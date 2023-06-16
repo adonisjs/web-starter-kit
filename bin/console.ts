@@ -32,9 +32,11 @@ const IMPORTER = (filePath: string) => {
 }
 
 new Ignitor(APP_ROOT, { importer: IMPORTER })
-  .tap(app => app.booting(async () => {
-    await import('#start/env')
-  }))
+  .tap((app) =>
+    app.booting(async () => {
+      await import('#start/env')
+    }),
+  )
   .ace()
   .handle(process.argv.splice(2))
   .catch(prettyPrintError)

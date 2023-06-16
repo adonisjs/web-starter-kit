@@ -1,5 +1,5 @@
-import { defineConfig } from "vite";
-import Adonis from "@adonisjs/vite/plugin";
+import { defineConfig } from 'vite'
+import Adonis from '@adonisjs/vite/plugin'
 
 export default defineConfig({
   plugins: [
@@ -8,7 +8,7 @@ export default defineConfig({
        * Entrypoints of your application. Each entrypoint will
        * result in a separate bundle.
        */
-      entrypoints: ["resources/js/app.js"],
+      entrypoints: ['resources/js/app.js'],
     }),
   ],
-});
+})

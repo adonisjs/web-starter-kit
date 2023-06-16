@@ -12,5 +12,5 @@ export default defineConfig({
      * to true in production
      */
     enabled: env.get('CACHE_VIEWS', false),
-  }
+  },
 })

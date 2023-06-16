@@ -35,9 +35,11 @@ const IMPORTER = (filePath: string) => {
 }
 
 new Ignitor(APP_ROOT, { importer: IMPORTER })
-  .tap(app => app.booting(async () => {
-    await import('#start/env')
-  }))
+  .tap((app) =>
+    app.booting(async () => {
+      await import('#start/env')
+    }),
+  )
   .testRunner()
   .configure(async (app) => {
     const { runnerHooks, ...config } = await import('../tests/bootstrap.js')

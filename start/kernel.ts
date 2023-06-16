@@ -31,9 +31,7 @@ server.use([
  * Router middleware stack runs midldeware on all the HTTP
  * requests that has a registered route.
  */
-router.use([
-  () => import('@adonisjs/core/bodyparser_middleware'),
-])
+router.use([() => import('@adonisjs/core/bodyparser_middleware')])
 
 /**
  * Named middleware collection must be explicitly assigned to

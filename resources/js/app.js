@@ -1,1 +1,1 @@
-console.log("Hello from AdonisJS !");
+console.log('Hello from AdonisJS !')
