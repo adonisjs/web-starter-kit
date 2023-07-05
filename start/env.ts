@@ -5,7 +5,7 @@
 |
 | The `Env.create` method creates an instance of the Env service. The
 | service validates the environment variables and also cast values
-| to correct data types.
+| to JavaScript data types.
 |
 */
 

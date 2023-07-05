@@ -18,18 +18,15 @@ import server from '@adonisjs/core/services/server'
 server.errorHandler(() => import('#exceptions/handler'))
 
 /**
- * Server middleware stack runs middleware on all the HTTP
+ * The server middleware stack runs middleware on all the HTTP
  * requests, even if there is no route registered for
  * the request URL.
  */
-server.use([
-  () => import('#middleware/container_bindings_middleware'),
-  () => import('@adonisjs/static/static_middleware'),
-])
+server.use([() => import('#middleware/container_bindings_middleware')])
 
 /**
- * Router middleware stack runs midldeware on all the HTTP
- * requests that has a registered route.
+ * The router middleware stack runs middleware on all the HTTP
+ * requests with a registered route.
  */
 router.use([() => import('@adonisjs/core/bodyparser_middleware')])
 
