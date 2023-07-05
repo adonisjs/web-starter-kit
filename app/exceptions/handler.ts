@@ -13,7 +13,7 @@ export default class HttpExceptionHandler extends ExceptionHandler {
    * codes. You might want to enable them in production only, but feel
    * free to enable them in development as well.
    */
-  protected renderStatusPages = !app.inProduction
+  protected renderStatusPages = app.inProduction
 
   /**
    * The method is used for handling errors and returning
