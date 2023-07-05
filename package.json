@@ -30,7 +30,6 @@
     "@adonisjs/eslint-config": "^1.1.7",
     "@adonisjs/prettier-config": "^1.1.7",
     "@adonisjs/tsconfig": "^1.1.7",
-    "@japa/api-client": "^2.0.0-0",
     "@japa/assert": "^2.0.0-1",
     "@japa/plugin-adonisjs": "^2.0.0-0",
     "@japa/runner": "^3.0.0-3",
