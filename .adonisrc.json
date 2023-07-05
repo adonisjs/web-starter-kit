@@ -8,16 +8,6 @@
     "./providers/emitter_provider.js"
   ],
   "preloads": ["#start/routes", "#start/kernel"],
-  "metaFiles": [
-    {
-      "pattern": "public/**",
-      "reloadServer": false
-    },
-    {
-      "pattern": "resources/views/**/*.edge",
-      "reloadServer": false
-    }
-  ],
   "tests": {
     "suites": [
       {
