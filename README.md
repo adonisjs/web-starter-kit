@@ -1,6 +1,6 @@
 # AdonisJS Web Starter Kit
 
-This repo contains an AdonisJS application tailored for building a server side rendered application using the [Edge template engine](https://edgejs.dev).
+This repo contains an AdonisJS application tailored for building a server-side rendered application using the [Edge template engine](https://edgejs.dev).
 
 ## What's included
 
@@ -24,7 +24,7 @@ On top of the framework core and dev-tooling, the following features are enabled
 You can create a new app using the `web` boilerplate by executing the following command. The command will perform the following steps
 
 - Clone the repo
-- Install depedencies
+- Install dependencies
 - Copy `.env.example` to `.env`
 - Set app key using `node ace generate:key` command.
 
