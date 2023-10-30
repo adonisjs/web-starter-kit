@@ -4,7 +4,6 @@ import { InferAuthEvents, Authenticators } from '@adonisjs/auth/types'
 
 const authConfig = defineConfig({
   default: 'web',
-  loginRoute: '/',
   guards: {
     web: sessionGuard({
       provider: providers.lucid({

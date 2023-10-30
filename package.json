@@ -45,7 +45,7 @@
     "vite": "^4.5.0"
   },
   "dependencies": {
-    "@adonisjs/auth": "^9.0.0-7",
+    "@adonisjs/auth": "^9.0.0-8",
     "@adonisjs/core": "^6.1.5-31",
     "@adonisjs/lucid": "^19.0.0-3",
     "@adonisjs/session": "^7.0.0-13",
