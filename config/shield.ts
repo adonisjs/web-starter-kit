@@ -1,6 +1,6 @@
 import { defineConfig } from '@adonisjs/shield'
 
-export default defineConfig({
+const shieldConfig = defineConfig({
   /**
    * Configure CSP policies for your app. Refer documentation
    * to learn more
@@ -47,3 +47,5 @@ export default defineConfig({
     enabled: true,
   },
 })
+
+export default shieldConfig
