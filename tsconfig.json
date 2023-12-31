@@ -13,7 +13,7 @@
       "#events/*": ["./app/events/*.js"],
       "#middleware/*": ["./app/middleware/*.js"],
       "#validators/*": ["./app/validators/*.js"],
-      "#providers/*": ["./app/providers/*.js"],
+      "#providers/*": ["./providers/*.js"],
       "#policies/*": ["./app/policies/*.js"],
       "#abilities/*": ["./app/abilities/*.js"],
       "#database/*": ["./database/*.js"],
