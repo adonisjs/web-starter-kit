@@ -9,11 +9,11 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.json]
-insert_final_newline = ignore
+insert_final_newline = unset
 
 [**.min.js]
-indent_style = ignore
-insert_final_newline = ignore
+indent_style = unset
+insert_final_newline = unset
 
 [MakeFile]
 indent_style = space
