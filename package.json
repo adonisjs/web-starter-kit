@@ -51,6 +51,7 @@
   "dependencies": {
     "@adonisjs/auth": "^9.0.2",
     "@adonisjs/core": "^6.2.1",
+    "@adonisjs/http-server": "^7.0.2",
     "@adonisjs/lucid": "^19.0.0",
     "@adonisjs/session": "^7.1.1",
     "@adonisjs/shield": "^8.1.0",
