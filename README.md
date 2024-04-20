@@ -31,15 +31,15 @@ You can create a new app using the `web` boilerplate by executing the following 
 - Configure `@adonisjs/auth` package.
 
 ```sh
-npm init adonisjs -- -K=web
+npm init adonisjs@latest -- -K=web
 ```
 
 ### Configuring Lucid database dialect
 
-By default, the `npm init adonisjs` command configures Lucid to use `sqlite`. However, you can define a custom database dialect as follows.
+By default, the `npm init adonisjs@latest` command configures Lucid to use `sqlite`. However, you can define a custom database dialect as follows.
 
 ```sh
-npm init adonisjs -- -K=web --db=postgres
+npm init adonisjs@latest -- -K=web --db=postgres
 ```
 
 Available options for the `--db` flag.
@@ -51,10 +51,10 @@ Available options for the `--db` flag.
 
 ### Configuring Auth package guard
 
-By default, the `npm init adonisjs` command configures the Auth package to use `session` guard. However, you can define a custom auth guard as follows.
+By default, the `npm init adonisjs@latest` command configures the Auth package to use `session` guard. However, you can define a custom auth guard as follows.
 
 ```sh
-npm init adonisjs -- -K=web --auth-guard=access_tokens
+npm init adonisjs@latest -- -K=web --auth-guard=access_tokens
 ```
 
 Available options for the `--auth-guard` flag.
