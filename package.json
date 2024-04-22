@@ -42,6 +42,7 @@
     "@swc/core": "^1.4.16",
     "@types/node": "^20.12.7",
     "eslint": "^8.57.0",
+    "hot-hook": "^0.2.1",
     "pino-pretty": "^11.0.0",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
@@ -59,6 +60,12 @@
     "@vinejs/vine": "^2.0.0",
     "edge.js": "^6.0.2",
     "reflect-metadata": "^0.2.2"
+  },
+  "hotHook": {
+    "boundaries": [
+      "./app/controllers/**/*.ts",
+      "./app/middleware/*.ts"
+    ]
   },
   "eslintConfig": {
     "extends": "@adonisjs/eslint-config/app"
