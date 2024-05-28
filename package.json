@@ -39,7 +39,7 @@
     "@japa/assert": "^3.0.0",
     "@japa/plugin-adonisjs": "^3.0.1",
     "@japa/runner": "^3.1.4",
-    "@swc/core": "1.5.7",
+    "@swc/core": "^1.5.7",
     "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
     "hot-hook": "^0.2.6",
