@@ -5,7 +5,7 @@ import { defineConfig } from '@adonisjs/static'
  * The complete set of options are documented on the
  * official documentation website.
  *
- * https://docs.adonisjs.com/guides/static-assets
+ * https://docs.adonisjs.com/guides/basics/static-file-server
  */
 const staticServerConfig = defineConfig({
   enabled: true,
