@@ -3,6 +3,21 @@ import { defineConfig } from '@adonisjs/core/app'
 export default defineConfig({
   /*
   |--------------------------------------------------------------------------
+  | Experimental flags
+  |--------------------------------------------------------------------------
+  |
+  | The following features will be enabled by default in the next major release
+  | of AdonisJS. You can opt into them today to avoid any breaking changes
+  | during upgrade.
+  |
+  */
+  experimental: {
+    mergeMultipartFieldsAndFiles: true,
+    shutdownInReverseOrder: true,
+  },
+
+  /*
+  |--------------------------------------------------------------------------
   | Commands
   |--------------------------------------------------------------------------
   |
