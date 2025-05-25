@@ -13,7 +13,7 @@ import server from '@adonisjs/core/services/server'
 
 /**
  * The error handler is used to convert an exception
- * to a HTTP response.
+ * to an HTTP response.
  */
 server.errorHandler(() => import('#exceptions/handler'))
 
