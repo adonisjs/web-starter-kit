@@ -1,0 +1,263 @@
+{
+  "root": [
+    {
+      "domain": "root",
+      "pattern": "/users",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": []
+      },
+      "name": "users.index",
+      "handler": {
+        "method": "index",
+        "reference": [
+          null,
+          "index"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users/create",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users/create",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        },
+        {
+          "old": "/users/create",
+          "type": 0,
+          "val": "create",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": []
+      },
+      "name": "users.create",
+      "handler": {
+        "method": "create",
+        "reference": [
+          null,
+          "create"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": []
+      },
+      "name": "users.store",
+      "handler": {
+        "method": "store",
+        "reference": [
+          null,
+          "store"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "POST"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users/:id",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users/:id",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        },
+        {
+          "old": "/users/:id",
+          "type": 1,
+          "val": "id",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": [
+          "id"
+        ]
+      },
+      "name": "users.show",
+      "handler": {
+        "method": "show",
+        "reference": [
+          null,
+          "show"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users/:id/edit",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users/:id/edit",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        },
+        {
+          "old": "/users/:id/edit",
+          "type": 1,
+          "val": "id",
+          "end": ""
+        },
+        {
+          "old": "/users/:id/edit",
+          "type": 0,
+          "val": "edit",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": [
+          "id"
+        ]
+      },
+      "name": "users.edit",
+      "handler": {
+        "method": "edit",
+        "reference": [
+          null,
+          "edit"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "GET",
+        "HEAD"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users/:id",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users/:id",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        },
+        {
+          "old": "/users/:id",
+          "type": 1,
+          "val": "id",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": [
+          "id"
+        ]
+      },
+      "name": "users.update",
+      "handler": {
+        "method": "update",
+        "reference": [
+          null,
+          "update"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "PUT",
+        "PATCH"
+      ],
+      "middleware": {}
+    },
+    {
+      "domain": "root",
+      "pattern": "/users/:id",
+      "matchers": {},
+      "tokens": [
+        {
+          "old": "/users/:id",
+          "type": 0,
+          "val": "users",
+          "end": ""
+        },
+        {
+          "old": "/users/:id",
+          "type": 1,
+          "val": "id",
+          "end": ""
+        }
+      ],
+      "meta": {
+        "params": [
+          "id"
+        ]
+      },
+      "name": "users.destroy",
+      "handler": {
+        "method": "destroy",
+        "reference": [
+          null,
+          "destroy"
+        ],
+        "importExpression": "()=>import('#controllers/users_controller')",
+        "name": "Users"
+      },
+      "methods": [
+        "DELETE"
+      ],
+      "middleware": {}
+    }
+  ]
+}

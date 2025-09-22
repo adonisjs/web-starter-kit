@@ -7,6 +7,8 @@
 |
 */
 
+import { controllers } from '#generated/controllers'
 import router from '@adonisjs/core/services/router'
 
-router.on('/').render('pages/home')
+router.resource('users', controllers.Users)
+// router.resource('comments', controllers.)

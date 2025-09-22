@@ -1,3 +1,4 @@
+import { indexEntities } from '@adonisjs/core'
 import { defineConfig } from '@adonisjs/core/app'
 
 export default defineConfig({
@@ -11,10 +12,7 @@ export default defineConfig({
   | during upgrade.
   |
   */
-  experimental: {
-    mergeMultipartFieldsAndFiles: true,
-    shutdownInReverseOrder: true,
-  },
+  experimental: {},
 
   /*
   |--------------------------------------------------------------------------
@@ -97,8 +95,8 @@ export default defineConfig({
     },
   ],
 
-  assetsBundler: false,
   hooks: {
-    onBuildStarting: [() => import('@adonisjs/vite/build_hook')],
+    init: [indexEntities()],
+    buildStarting: [() => import('@adonisjs/vite/build_hook')],
   },
 })
