@@ -41,6 +41,7 @@
     "@japa/plugin-adonisjs": "^5.0.0-next.0",
     "@japa/runner": "^4.4.0",
     "@poppinss/ts-exec": "^1.4.1",
+    "@types/luxon": "^3.7.1",
     "@types/node": "^24.5.2",
     "eslint": "^9.36.0",
     "hot-hook": "^0.4.1-next.0",
@@ -59,7 +60,9 @@
     "@adonisjs/static": "^2.0.0-next.0",
     "@adonisjs/vite": "^5.0.1-next.0",
     "@vinejs/vine": "^3.0.1",
+    "better-sqlite3": "^12.4.1",
     "edge.js": "^6.3.0",
+    "luxon": "^3.7.2",
     "reflect-metadata": "^0.2.2"
   },
   "hotHook": {
