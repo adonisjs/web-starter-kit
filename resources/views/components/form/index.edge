@@ -1,0 +1,11 @@
+<form {{ $props
+  .except(['action', 'method', 'route', 'routeParams', 'routeOptions'])
+  .merge(formAttributes(
+    $props.get('route'),
+    $props.get('method') ?? 'GET',
+    $props.get('routeParams'),
+    $props.get('routeOptions'),
+  )).toAttrs() }}>
+  {{ csrfField() }}
+  {{{ await $slots.main() }}}
+</form>

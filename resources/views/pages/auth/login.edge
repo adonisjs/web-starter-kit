@@ -1,0 +1,30 @@
+@layout()
+  <h1> Login </h1>
+    <p>
+      Enter your email and password below to log in
+    </p>
+
+    <div>
+      @form({ route: 'session.store', method: 'POST' })
+        <div>
+          @input.root({ name: 'email' })
+            @!field.label({ text: 'Email' })
+            @!input.control({ type: 'email' })
+            @!field.error()
+          @end
+        </div>
+
+        <div>
+          @input.root({ name: 'password' })
+            @!field.label({ text: 'Password' })
+            @!input.control({ type: 'password' })
+            @!field.error()
+          @end
+        </div>
+
+        <div>
+          @!button({ text: 'Login', type: 'submit' })
+        </div>
+      @end
+    </div>
+  @end

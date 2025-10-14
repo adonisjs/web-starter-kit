@@ -1,0 +1,46 @@
+@layout()
+  <h1> Signup </h1>
+  <p>
+    Enter your details below to create your account
+  </p>
+
+  <div>
+    @form({ route: 'new_account.store', method: 'POST' })
+      <div>
+        @input.root({ name: 'fullName' })
+          @!field.label({ text: 'Full name' })
+          @!input.control()
+          @!field.error()
+        @end
+      </div>
+
+      <div>
+        @input.root({ name: 'email' })
+          @!field.label({ text: 'Email' })
+          @!input.control({ type: 'email' })
+          @!field.error()
+        @end
+      </div>
+
+      <div>
+        @input.root({ name: 'password' })
+          @!field.label({ text: 'Password' })
+          @!input.control({ type: 'password' })
+          @!field.error()
+        @end
+      </div>
+
+      <div>
+        @input.root({ name: 'passwordConfirmation' })
+          @!field.label({ text: 'Confirm password' })
+          @!input.control({ type: 'password' })
+          @!field.error()
+        @end
+      </div>
+
+      <div>
+        @!button({ text: 'Sign up', type: 'submit' })
+      </div>
+    @end
+  </div>
+@end

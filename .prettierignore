@@ -1,0 +1,4 @@
+.adonisjs
+node_modules
+build
+*.edge

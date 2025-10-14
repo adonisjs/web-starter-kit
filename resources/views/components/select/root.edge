@@ -1,0 +1,9 @@
+@let(fieldKey = $props.get('name'))
+@inject({
+  name: fieldKey,
+  id: $props.get('id') ?? fieldKey,
+  oldValue: old(fieldKey) || '',
+  errors: flashMessages.get('inputErrorsBag', {})[fieldKey],
+  hasErrors: fieldKey in flashMessages.get('inputErrorsBag', {}),
+})
+{{{ await $slots.main() }}}
