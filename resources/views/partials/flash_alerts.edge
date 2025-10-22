@@ -3,6 +3,7 @@
     @!alert.title({ text: 'Error' })
     @each(message in $messages)
       @!alert.description({ text: message })
+      <button>✕</button>
     @end
   @end
 @end
