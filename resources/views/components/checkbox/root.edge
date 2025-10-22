@@ -1,6 +1,0 @@
-@assign($context.counter = $context.counter + 1)
-@inject({
-  ...$context,
-  id: `${$context.id}_${$context.counter}`
-})
-{{{ await $slots.main() }}}

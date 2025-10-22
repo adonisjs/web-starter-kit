@@ -1,9 +1,9 @@
 @let(classes = [])
 
 @if($context.hasErrors)
-<div {{ $props.merge({ id: `${$context.id}-error`, class: classes }).toAttrs() }}>
-  @each(message in $context.errors)
-    <span>{{ message }}</span>
-  @end
-</div>
+  <div {{ $props.merge({ id: `${$context.id}-error`, class: classes }).toAttrs() }}>
+    @each(message in $context.errors)
+      <span>{{ message }}</span>
+    @end
+  </div>
 @end

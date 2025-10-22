@@ -1,0 +1,8 @@
+@errors()
+  @alert.root({ variant: 'error' })
+    @!alert.title({ text: 'Error' })
+    @each(message in $messages)
+      @!alert.description({ text: message })
+    @end
+  @end
+@end

@@ -1,0 +1,9 @@
+@let(variant = $props.get('variant') || 'default')
+@inject({ variant })
+@let(classes = ['alert', `alert-${variant}`])
+
+<div {{ $props
+  .except(['variant'])
+  .merge({ role: 'alert', class: classes, 'x-data': 'alert' })
+  .toAttrs()
+}}> {{{ await $slots.main() }}} </div>

@@ -1,0 +1,15 @@
+<header>
+  <div>
+    <div></div>
+    <div>
+      <nav>
+        @if(auth.user)
+          @!avatar({ initials: auth.user.initials })
+        @else
+          @!link({ route: 'new_account.create', text: 'Signup' })
+          @!link({ route: 'session.create', text: 'Login' })
+        @end
+      </nav>
+    </div>
+  </div>
+</header>

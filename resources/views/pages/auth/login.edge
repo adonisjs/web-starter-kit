@@ -1,13 +1,16 @@
 @layout()
-  <h1> Login </h1>
-    <p>
-      Enter your email and password below to log in
-    </p>
+  <div>
+    <div>
+      <h1> Login </h1>
+      <p>
+        Enter your email and password below to log in
+      </p>
+    </div>
 
     <div>
       @form({ route: 'session.store', method: 'POST' })
         <div>
-          @input.root({ name: 'email' })
+          @field.root({ name: 'email' })
             @!field.label({ text: 'Email' })
             @!input.control({ type: 'email' })
             @!field.error()
@@ -15,7 +18,7 @@
         </div>
 
         <div>
-          @input.root({ name: 'password' })
+          @field.root({ name: 'password' })
             @!field.label({ text: 'Password' })
             @!input.control({ type: 'password' })
             @!field.error()
@@ -27,4 +30,5 @@
         </div>
       @end
     </div>
-  @end
+  </div>
+@end

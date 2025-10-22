@@ -2,7 +2,7 @@
 @inject({
   name: fieldKey,
   id: $props.get('id') ?? fieldKey,
-  counter: 0,
+  groupCounter: 0,
   oldValue: old(fieldKey) || '',
   errors: flashMessages.get('inputErrorsBag', {})[fieldKey],
   hasErrors: fieldKey in flashMessages.get('inputErrorsBag', {}),
