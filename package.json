@@ -58,7 +58,7 @@
     "@adonisjs/session": "^8.0.0-next.0",
     "@adonisjs/shield": "^9.0.0-next.1",
     "@adonisjs/static": "^2.0.0-next.0",
-    "@adonisjs/vite": "^5.0.1-next.3",
+    "@adonisjs/vite": "^5.1.0-next.0",
     "@vinejs/vine": "^4.0.1",
     "better-sqlite3": "^12.4.1",
     "edge.js": "^6.3.0",
