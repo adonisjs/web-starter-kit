@@ -3,6 +3,5 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "./build"
-  },
-  "include": ["**/*", ".adonisjs/server/**/*"]
+  }
 }
