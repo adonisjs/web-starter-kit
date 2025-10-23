@@ -1,9 +1,11 @@
-@errors()
-  @alert.root({ variant: 'error' })
-    @!alert.title({ text: 'Error' })
-    @each(message in $messages)
-      @!alert.description({ text: message })
-      <button>✕</button>
+<div class="flash-container">
+  @errors()
+    @each((message, code) in $messages)
+      @if(code !== 'E_VALIDATION_ERROR')
+        @alert.root({ variant: 'destructive', autoDismiss: true })
+          @!alert.description({ text: message })
+        @end
+      @end
     @end
   @end
-@end
+</div>
