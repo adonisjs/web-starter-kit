@@ -1,5 +1,5 @@
 @layout()
-  <div>
+  <div class="form-container">
     <div>
       <h1> Signup </h1>
       <p>
@@ -36,7 +36,7 @@
         <div>
           @field.root({ name: 'passwordConfirmation' })
             @!field.label({ text: 'Confirm password' })
-            @!input.control({ type: 'password' })
+            @!input.control({ type: 'password', autocomplete: 'new-password' })
             @!field.error()
           @end
         </div>
