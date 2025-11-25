@@ -75,6 +75,7 @@ header nav a.current {
 main {
   max-width: 1440px;
   margin: 0 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,6 +98,11 @@ main {
 .hero p {
   font-size: 22px;
   color: var(--gray-7);
+}
+.hero .button {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 16px;
 }
 
 .cards {
@@ -136,7 +142,7 @@ main {
 .form-container h1 {
   font-size: 32px;
   letter-spacing: -0.5px;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 .form-container p {
   font-size: 18px;
@@ -154,33 +160,44 @@ label {
   font-weight: 500;
 }
 input,
+textarea,
 button {
   width: 100%;
-  border-radius: 4px;
-  font: inherit;
 }
 input {
   height: 40px;
+  font-family: inherit;
   border: 1px solid var(--gray-4);
   padding: 0 16px;
 }
-input[data-invalid='true'] {
+textarea {
+  border: 1px solid var(--gray-4);
+  padding: 12px 16px;
+  font-family: inherit;
+}
+input[data-invalid='true'],
+textarea[data-invalid='true'] {
   border-color: #fb2c36;
 }
-input[data-invalid='true'] + div {
+input[data-invalid='true'] + div,
+textarea[data-invalid='true'] + div {
   color: #fb2c36;
   font-size: 14px;
   font-weight: 500;
   margin-top: 2px;
 }
-button {
+button,
+.button {
   background: var(--gray-12);
   color: #fff;
   border: none;
   padding: 10px;
   font-weight: 500;
+  border-radius: 4px;
+  font: inherit;
 }
-button:hover {
+button:hover,
+.button:hover {
   background: var(--gray-10);
 }
 
