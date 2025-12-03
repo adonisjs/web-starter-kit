@@ -3,6 +3,12 @@ import app from '@adonisjs/core/services/app'
 import type { Config } from '@japa/runner/types'
 import { pluginAdonisJS } from '@japa/plugin-adonisjs'
 import testUtils from '@adonisjs/core/services/test_utils'
+
+/**
+ * Uncomment these lines of code if you are using Playwright for
+ * writing tests. Also make sure to install "playwright" as a
+ * direct dev-dependency in your project
+ */
 // import { authBrowserClient } from '@adonisjs/auth/plugins/browser_client'
 // import { sessionBrowserClient } from '@adonisjs/session/plugins/browser_client'
 
@@ -17,6 +23,11 @@ import testUtils from '@adonisjs/core/services/test_utils'
 export const plugins: Config['plugins'] = [
   assert(),
   pluginAdonisJS(app),
+  /**
+   * Uncomment these lines of code if you are using Playwright for
+   * writing tests. Also make sure to install "playwright" as a
+   * direct dev-dependency in your project
+   */
   // sessionBrowserClient(app),
   // authBrowserClient(app),
 ]
