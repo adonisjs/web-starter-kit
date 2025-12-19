@@ -3,15 +3,6 @@ import app from '@adonisjs/core/services/app'
 import { defineConfig } from '@adonisjs/core/http'
 
 /**
- * The app key is used for encrypting cookies, generating signed URLs,
- * and by the "encryption" module.
- *
- * The encryption module will fail to decrypt data if the key is lost or
- * changed. Therefore it is recommended to keep the app key secure.
- */
-export const appKey = env.get('APP_KEY')
-
-/**
  * The app URL can be used in various places where you want to create absolute
  * URLs to your application. For example, when sending emails, images should
  * use absolute URLs.
