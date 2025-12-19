@@ -52,14 +52,14 @@
     "prettier": "^3.7.4",
     "typescript": "~5.9",
     "vite": "^7.3.0",
-    "youch": "^4.1.0-beta.11"
+    "youch": "^4.1.0-beta.13"
   },
   "dependencies": {
-    "@adonisjs/auth": "^10.0.0-next.2",
+    "@adonisjs/auth": "^10.0.0-next.3",
     "@adonisjs/core": "^7.0.0-next.16",
     "@adonisjs/lucid": "^22.0.0-next.1",
-    "@adonisjs/session": "^8.0.0-next.0",
-    "@adonisjs/shield": "^9.0.0-next.1",
+    "@adonisjs/session": "^8.0.0-next.1",
+    "@adonisjs/shield": "^9.0.0-next.2",
     "@adonisjs/static": "^2.0.0-next.1",
     "@adonisjs/vite": "^5.1.0-next.2",
     "@vinejs/vine": "^4.2.0",
