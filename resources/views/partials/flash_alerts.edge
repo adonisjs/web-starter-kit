@@ -8,4 +8,9 @@
       @end
     @end
   @end
+  @if(flashMessages.has('success'))
+    @alert.root({ variant: 'success', autoDismiss: true })
+      @!alert.description({ text: flashMessages.get('success') })
+    @end
+  @end
 </div>
