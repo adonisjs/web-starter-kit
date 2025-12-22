@@ -13,6 +13,7 @@ const bodyParserConfig = defineConfig({
    */
   form: {
     convertEmptyStringsToNull: true,
+    trimWhitespaces: true,
     types: ['application/x-www-form-urlencoded'],
   },
 
@@ -21,6 +22,7 @@ const bodyParserConfig = defineConfig({
    */
   json: {
     convertEmptyStringsToNull: true,
+    trimWhitespaces: true,
     types: [
       'application/json',
       'application/json-patch+json',
@@ -41,6 +43,7 @@ const bodyParserConfig = defineConfig({
      */
     autoProcess: true,
     convertEmptyStringsToNull: true,
+    trimWhitespaces: true,
     processManually: [],
 
     /**
