@@ -14,7 +14,7 @@ export const appUrl = env.get('APP_URL')
  */
 export const http = defineConfig({
   generateRequestId: true,
-  allowMethodSpoofing: false,
+  allowMethodSpoofing: true,
 
   /**
    * Enabling async local storage will let you access HTTP context
