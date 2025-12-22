@@ -201,6 +201,17 @@ button:hover,
   background: var(--gray-10);
 }
 
+button.destructive,
+.button.destructive {
+  color: #fb2c36;
+  background: #fb2c361a;
+  border-color: #fb2c36;
+}
+button.destructive:hover,
+.button.destructive:hover {
+  background: #fb2c3647;
+}
+
 /* Alerts */
 .alert {
   background: #fff;
