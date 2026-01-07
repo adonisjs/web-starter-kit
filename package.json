@@ -33,8 +33,8 @@
     "#config/*": "./config/*.js"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^8.0.0-next.26",
-    "@adonisjs/eslint-config": "^3.0.0-next.5",
+    "@adonisjs/assembler": "^8.0.0-next.28",
+    "@adonisjs/eslint-config": "^3.0.0-next.9",
     "@adonisjs/prettier-config": "^1.4.5",
     "@adonisjs/tsconfig": "^2.0.0-next.3",
     "@japa/assert": "^4.2.0",
@@ -56,9 +56,9 @@
   },
   "dependencies": {
     "@adonisjs/auth": "^10.0.0-next.3",
-    "@adonisjs/core": "^7.0.0-next.16",
-    "@adonisjs/lucid": "^22.0.0-next.1",
-    "@adonisjs/session": "^8.0.0-next.1",
+    "@adonisjs/core": "^7.0.0-next.20",
+    "@adonisjs/lucid": "^22.0.0-next.4",
+    "@adonisjs/session": "^8.0.0-next.2",
     "@adonisjs/shield": "^9.0.0-next.2",
     "@adonisjs/static": "^2.0.0-next.1",
     "@adonisjs/vite": "^5.1.0-next.2",
