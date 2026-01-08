@@ -86,6 +86,15 @@ export default defineConfig({
     forceExit: false,
   },
 
+  /*
+  |--------------------------------------------------------------------------
+  | Meta files
+  |--------------------------------------------------------------------------
+  |
+  | A collection of files you want to copy to the build folder when creating
+  | a production build.
+  |
+  */
   metaFiles: [
     {
       pattern: 'resources/views/**/*.edge',
@@ -97,6 +106,17 @@ export default defineConfig({
     },
   ],
 
+  /*
+  |--------------------------------------------------------------------------
+  | Hooks
+  |--------------------------------------------------------------------------
+  |
+  | Assembler hooks are executed by the Assembler dev tool during various
+  | stages. Assembler is responsible for running the dev-server, tests, and
+  | creating production builds. These hooks run in a separate process than
+  | the main AdonisJS app.
+  |
+  */
   hooks: {
     init: [indexEntities()],
     buildStarting: [() => import('@adonisjs/vite/build_hook')],

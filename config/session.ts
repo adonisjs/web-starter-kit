@@ -2,8 +2,19 @@ import env from '#start/env'
 import app from '@adonisjs/core/services/app'
 import { defineConfig, stores } from '@adonisjs/session'
 
+/**
+ * Session configuration.
+ * Defines how user sessions are managed, stored, and secured.
+ */
 const sessionConfig = defineConfig({
+  /**
+   * Enable or disable session management globally.
+   */
   enabled: true,
+
+  /**
+   * The name of the cookie used to store the session ID.
+   */
   cookieName: 'adonis-session',
 
   /**
@@ -23,9 +34,28 @@ const sessionConfig = defineConfig({
    * cookie store
    */
   cookie: {
+    /**
+     * The path for which the cookie is valid.
+     * '/' means the cookie is accessible for all routes.
+     */
     path: '/',
+
+    /**
+     * When true, the cookie is only accessible via HTTP(S) and not
+     * by client-side JavaScript, helping prevent XSS attacks.
+     */
     httpOnly: true,
+
+    /**
+     * When true, the cookie is only sent over HTTPS connections.
+     * Enabled in production for security.
+     */
     secure: app.inProduction,
+
+    /**
+     * Controls when cookies are sent with cross-site requests.
+     * 'lax' provides reasonable security while allowing some cross-site usage.
+     */
     sameSite: 'lax',
   },
 
@@ -41,6 +71,10 @@ const sessionConfig = defineConfig({
    * list of available stores and their config.
    */
   stores: {
+    /**
+     * Cookie store saves session data in encrypted cookies.
+     * Suitable for small session data that doesn't exceed cookie size limits.
+     */
     cookie: stores.cookie(),
   },
 })
