@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Add your cover image here -->
-  <img src=".github/cover.png" alt="AdonisJS Hypermedia Starter Kit" width="100%">
+  <img src="https://github.com/adonisjs/.github/blob/next/docs/hypermedia-adonisjs.png?raw=true" alt="AdonisJS Hypermedia Starter Kit" width="100%">
 
   <h1>Hypermedia Starter Kit</h1>
 
